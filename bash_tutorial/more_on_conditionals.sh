@@ -11,3 +11,12 @@ elif [[ ${X} == ${Y} || ${X} == ${Z} || ${Y} == ${Z} ]]; then
 else 
   echo "SCALENE"
 fi
+
+# OR
+if [ ${X} == ${Y} -a ${X} == ${Z} ];then
+  echo "EQUILATERAL"
+elif [[ ${X} == ${Y} -o ${X} == ${Z} -o ${Y} == ${Z} ]]; then
+  echo "ISOSCELES"
+else 
+  echo "SCALENE"
+fi
